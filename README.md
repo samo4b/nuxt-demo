@@ -41,5 +41,11 @@ npm run preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
+## ESLint
+Find problems in the JavaScript code:
+```bash
+npm run lint
+```
+
 ## Tailwind Config Viewer
 Open <http://localhost:3000/_tailwind/> to see the current visualized Tailwind configuration.

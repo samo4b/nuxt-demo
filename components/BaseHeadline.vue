@@ -1,7 +1,10 @@
-<script setup>
+<script setup lang="ts">
+type Heading = 'h1' | 'h2' | 'h3'
+
 defineProps({
-  type: 'h1' | 'h2' | 'h3'
+  type: { type: String as PropType<Heading>, required: true }
 })
+
 const fontSize = {
   h1: 'text-3xl',
   h2: 'text-2xl',
