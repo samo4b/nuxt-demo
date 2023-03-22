@@ -40,3 +40,6 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Tailwind Config Viewer
+Open <http://localhost:3000/_tailwind/> to see the current visualized Tailwind configuration.
