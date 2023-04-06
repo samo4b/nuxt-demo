@@ -1,0 +1,15 @@
+.dockerignore
+.eslintignore
+.eslintrc
+.gitignore
+.git
+.idea
+.npmrc
+.nuxt
+.output
+.vscode
+dist
+Dockerfile
+LICENSE
+node_modules
+README.md

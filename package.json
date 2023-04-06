@@ -4,6 +4,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .vue,.ts,.js,.mjs .",
     "preview": "nuxt preview",

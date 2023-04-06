@@ -49,3 +49,14 @@ npm run lint
 
 ## Tailwind Config Viewer
 Open <http://localhost:3000/_tailwind/> to see the current visualized Tailwind configuration.
+
+## Docker
+Build a Docker container
+```bash
+docker build -t nuxt-demo .
+```
+
+Run the demo in a Docker container
+```bash
+docker run --name nuxt-demo -d -p 3000:3000 nuxt-demo
+```
