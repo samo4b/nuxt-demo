@@ -8,5 +8,5 @@ const props = defineProps({
 </script>
 
 <template>
-  <FontAwesomeIcon :icon="{ prefix: props.prefix, iconName: props.name }" />
+  <FontAwesomeIcon class="dark:text-white" :icon="{ prefix: props.prefix, iconName: props.name }" />
 </template>

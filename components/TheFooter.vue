@@ -19,7 +19,7 @@ onDeactivated(() => {
 </script>
 
 <template>
-  <footer class="flex fixed w-full h-24 bottom-0 bg-slate-500 text-white font-bold text-2xl justify-center place-items-center">
+  <footer class="sticky flex w-full h-24 bottom-0 bg-slate-500 dark:bg-fuchsia-900 text-white font-bold text-2xl justify-center place-items-center">
     {{ time }}
   </footer>
 </template>

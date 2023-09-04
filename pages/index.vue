@@ -20,33 +20,32 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full flex flex-col items-center">
+  <div class="h-full w-full flex flex-col items-center dark:bg-neutral-700">
     <BaseHeadline type="h1">
-      Nuxt 3 Demo
+      <BaseText>Nuxt 3 Demo</BaseText>
       <BaseIcon name="cat" />
     </BaseHeadline>
     <BaseHeadlineOptionsAPI type="h1">
-      Headline from Options API
+      <BaseText>Headline from Options API</BaseText>
     </BaseHeadlineOptionsAPI>
-    <div>Button: (Composition API)</div>
+    <BaseText>Button: (Composition API)</BaseText>
     <BaseButton @button-clicked="buttonWasClicked">
       Click me!
     </BaseButton>
-    Button click count: {{ buttonClickCount }}
+    <BaseText>Button click count: {{ buttonClickCount }}</BaseText>
 
-    <div>Button: (Options API)</div>
+    <BaseText>Button: (Options API)</BaseText>
     <BaseButtonOptionsAPI @button-clicked="buttonWasClickedOptionsAPI">
       Click me!
     </BaseButtonOptionsAPI>
   
-    Button click count: {{ buttonClickCountOptionsAPI }}
-
-    <p>Data from /api/hello endpoint:</p>
+    <BaseText>Button click count: {{ buttonClickCountOptionsAPI }}</BaseText>
+    <BaseText>Data from /api/hello endpoint:</BaseText>
     <div class="w-1/2 grid grid-cols-4" v-for="(person, index) in data" :key="index">
-      <div class="bg-teal-500 text-white p-2">gender: {{ person.gender }}</div>
-      <div class="bg-amber-500 text-white p-2">firstName: {{ person.firstName }}</div>
-      <div class="bg-yellow-500 text-white p-2">lastName: {{ person.lastName }}</div>
-      <div class="bg-lime-500 text-white p-2">age: {{ person.age }}</div>
+      <div class="bg-teal-500 text-white p-2 text-black">gender: {{ person.gender }}</div>
+      <div class="bg-amber-500 text-white p-2 text-black">firstName: {{ person.firstName }}</div>
+      <div class="bg-yellow-500 text-white p-2 text-black">lastName: {{ person.lastName }}</div>
+      <div class="bg-lime-500 text-white p-2 text-black">age: {{ person.age }}</div>
     </div>
   </div>
 </template>
