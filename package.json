@@ -19,8 +19,8 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/eslint-config-typescript": "12.1.0",
     "@nuxtjs/tailwindcss": "6.8.0",
+    "@types/node": "18.17.4",
     "eslint": "8.48.0",
-    "nuxt": "3.7.0",
-    "@types/node": "18.17.4"
+    "nuxt": "3.7.1"
   }
 }
