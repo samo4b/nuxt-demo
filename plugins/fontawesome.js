@@ -1,5 +1,6 @@
 // For Nuxt 3
 import { library, config } from '@fortawesome/fontawesome-svg-core'
+// eslint-disable-next-line
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 

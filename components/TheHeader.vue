@@ -6,7 +6,7 @@ const navigation = [
 const darkMode = ref(false)
 const emit = defineEmits(['toggle-dark-mode'])
 
-function toggleDarkMode() {
+function toggleDarkMode () {
   darkMode.value = !darkMode.value
   emit('toggle-dark-mode', darkMode.value)
 }

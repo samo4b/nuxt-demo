@@ -1,4 +1,5 @@
 <script setup>
+// eslint-disable-next-line
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 const props = defineProps({

@@ -14,7 +14,9 @@ function buttonWasClickedOptionsAPI (newCount : number) {
 }
 
 onMounted(() => {
+  // eslint-disable-next-line
   console.log('Data from /api/hello using $fetch:', fetchData)
+  // eslint-disable-next-line
   console.log('Data from /api/hello using useFetch:', data)
 })
 </script>
@@ -38,14 +40,22 @@ onMounted(() => {
     <BaseButtonOptionsAPI @button-clicked="buttonWasClickedOptionsAPI">
       Click me!
     </BaseButtonOptionsAPI>
-  
+
     <BaseText>Button click count: {{ buttonClickCountOptionsAPI }}</BaseText>
     <BaseText>Data from /api/hello endpoint:</BaseText>
-    <div class="w-1/2 grid grid-cols-4" v-for="(person, index) in data" :key="index">
-      <div class="bg-teal-500 text-white p-2 text-black">gender: {{ person.gender }}</div>
-      <div class="bg-amber-500 text-white p-2 text-black">firstName: {{ person.firstName }}</div>
-      <div class="bg-yellow-500 text-white p-2 text-black">lastName: {{ person.lastName }}</div>
-      <div class="bg-lime-500 text-white p-2 text-black">age: {{ person.age }}</div>
+    <div v-for="(person, index) in data" :key="index" class="w-1/2 grid grid-cols-4">
+      <div class="bg-teal-500 text-white p-2 text-black">
+        gender: {{ person.gender }}
+      </div>
+      <div class="bg-amber-500 text-white p-2 text-black">
+        firstName: {{ person.firstName }}
+      </div>
+      <div class="bg-yellow-500 text-white p-2 text-black">
+        lastName: {{ person.lastName }}
+      </div>
+      <div class="bg-lime-500 text-white p-2 text-black">
+        age: {{ person.age }}
+      </div>
     </div>
   </div>
 </template>

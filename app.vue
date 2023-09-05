@@ -1,8 +1,12 @@
 <script setup lang="ts">
-let darkMode = ref('')
-function toggleDarkMode() {
-  if (darkMode.value === 'dark') darkMode.value = ''
-  else darkMode.value = 'dark'
+const darkMode = ref('')
+
+function toggleDarkMode () {
+  if (darkMode.value === 'dark') {
+    darkMode.value = ''
+  } else {
+    darkMode.value = 'dark'
+  }
 }
 </script>
 
