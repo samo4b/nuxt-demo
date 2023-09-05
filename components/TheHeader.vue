@@ -1,6 +1,7 @@
 <script setup>
 const navigation = [
-  { name: 'Homepage', target: '/' }
+  { name: 'Homepage', target: '/' },
+  { name: 'Demo', target: '/demo' }
 ]
 
 const darkMode = ref(false)
@@ -14,7 +15,7 @@ function toggleDarkMode () {
 
 <template>
   <header>
-    <div class="sticky flex flex-row w-full h-12 bg-slate-400 dark:bg-fuchsia-900 gap-6 p-9 place-items-center text-white">
+    <div class="sticky flex flex-row w-full h-12 bg-teal-700 dark:bg-fuchsia-900 gap-6 p-9 place-items-center text-white">
       <NuxtLink v-for="(entry, index) in navigation" :key="index" :to="entry.target">
         {{ entry.name }}
       </NuxtLink>
