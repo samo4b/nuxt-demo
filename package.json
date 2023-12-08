@@ -1,4 +1,5 @@
 {
+  "name": "nuxt-demo",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -11,18 +12,18 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "6.4.2",
-    "@fortawesome/free-solid-svg-icons": "6.4.2",
-    "@fortawesome/vue-fontawesome": "3.0.3"
+    "@fortawesome/fontawesome-svg-core": "6.5.1",
+    "@fortawesome/free-solid-svg-icons": "6.5.1",
+    "@fortawesome/vue-fontawesome": "3.0.5"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
+    "@nuxt/devtools": "1.0.5",
     "@nuxtjs/eslint-config-typescript": "12.1.0",
-    "@nuxtjs/tailwindcss": "6.8.0",
-    "@types/node": "20.8.6",
-    "eslint": "8.51.0",
-    "nuxt": "3.7.4",
-    "vue": "3.3.4",
+    "@nuxtjs/tailwindcss": "6.10.1",
+    "@types/node": "20.10.4",
+    "eslint": "8.55.0",
+    "nuxt": "3.8.2",
+    "vue": "3.3.11",
     "vue-router": "4.2.5"
   }
 }
