@@ -1,16 +1,11 @@
 <script setup lang="ts">
 const buttonClickCount = ref(0)
-const buttonClickCountOptionsAPI = ref(0)
 
 const fetchData = await $fetch('/api/demo')
 const { data } = await useFetch('/api/demo')
 
 function buttonWasClicked (newCount : number) {
   buttonClickCount.value = newCount
-}
-
-function buttonWasClickedOptionsAPI (newCount : number) {
-  buttonClickCountOptionsAPI.value = newCount
 }
 
 onMounted(() => {
