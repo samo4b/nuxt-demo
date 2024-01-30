@@ -1,4 +1,4 @@
-FROM node:20.8.1-alpine3.18 AS build
+FROM node:20.11.0-alpine3.19 AS build
 
 WORKDIR /usr/src/nuxt-app
 COPY package*.json ./
@@ -8,7 +8,7 @@ RUN npm run build \
   && rm -rf node_modules
 
 
-FROM node:20.8.1-alpine3.18 AS runtime
+FROM node:20.11.0-alpine3.19 AS runtime
 
 WORKDIR /usr/src/nuxt-app
 COPY --chown=node:node --from=build /usr/src/nuxt-app /usr/src/nuxt-app
