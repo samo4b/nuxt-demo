@@ -6,6 +6,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "start": "nuxt start",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "generate": "nuxt generate",
     "lint": "eslint --ext .vue,.ts,.js,.mjs .",
     "preview": "nuxt preview",
@@ -21,8 +23,10 @@
     "@nuxtjs/eslint-config-typescript": "12.1.0",
     "@nuxtjs/tailwindcss": "6.12.0",
     "@types/node": "20.12.7",
+    "@vitest/coverage-v8": "1.5.3",
     "eslint": "8.57.0",
     "nuxt": "3.11.2",
+    "vitest": "1.5.3",
     "vue": "3.4.26",
     "vue-router": "4.3.2"
   }
